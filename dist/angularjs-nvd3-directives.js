@@ -1,4 +1,4 @@
-/*! angularjs-nvd3-directives - v0.0.7 - 2014-05-28
+/*! angularjs-nvd3-directives - v0.0.7 - 2014-06-05
  * http://cmaurer.github.io/angularjs-nvd3-directives
  * Copyright (c) 2014 Christian Maurer; Licensed Apache License, v2.0 */
 ( function () {
@@ -313,7 +313,7 @@
       } );
 
       chart.discretebar.dispatch.on( 'elementMouseout.tooltip.directive', function ( event ) {
-        scope.$emit( 'elementMouseover.tooltip.directive', event );
+        scope.$emit( 'elementMouseout.tooltip.directive', event );
       } );
 
       chart.discretebar.dispatch.on( 'elementClick.directive', function ( event ) {
@@ -327,7 +327,7 @@
       } );
 
       chart.multibar.dispatch.on( 'elementMouseout.tooltip.directive', function ( event ) {
-        scope.$emit( 'elementMouseover.tooltip.directive', event );
+        scope.$emit( 'elementMouseout.tooltip.directive', event );
       } );
 
       chart.multibar.dispatch.on( 'elementClick.directive', function ( event ) {
@@ -342,7 +342,7 @@
       } );
 
       chart.pie.dispatch.on( 'elementMouseout.tooltip.directive', function ( event ) {
-        scope.$emit( 'elementMouseover.tooltip.directive', event );
+        scope.$emit( 'elementMouseout.tooltip.directive', event );
       } );
 
       chart.pie.dispatch.on( 'elementClick.directive', function ( event ) {
@@ -356,7 +356,7 @@
       } );
 
       chart.scatter.dispatch.on( 'elementMouseout.tooltip.directive', function ( event ) {
-        scope.$emit( 'elementMouseover.tooltip.directive', event );
+        scope.$emit( 'elementMouseout.tooltip.directive', event );
       } );
     }
 
@@ -366,7 +366,7 @@
       } );
 
       chart.bullet.dispatch.on( 'elementMouseout.tooltip.directive', function ( event ) {
-        scope.$emit( 'elementMouseover.tooltip.directive', event );
+        scope.$emit( 'elementMouseout.tooltip.directive', event );
       } );
     }
 
